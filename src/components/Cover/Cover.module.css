@@ -1,0 +1,8 @@
+.wrapper {
+  
+  & img {
+    height: var(--cover-height);
+    width: 100%;  
+  }
+}
+
