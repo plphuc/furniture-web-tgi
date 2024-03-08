@@ -1,8 +1,8 @@
+import Header from 'components/Header/Header';
+import Cover from 'components/Cover/Cover';
 import './App.css';
 import './index.css';
 
-import Header from 'components/Header/Header';
-import Cover from 'components/Cover/Cover';
 
 function App() {
   return (
@@ -38,6 +38,11 @@ function App() {
       <div className='contentContainer'>
         <span className='titleContent'>Inspiration Collection</span>
         <span className='descContent'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+      </div>
+      <div className='imagesContainer'>
+        <div className='imageItem'>
+          <img src='/furniture1.png' alt='furniture'/>
+        </div>
       </div>
       </div>
     </div>
