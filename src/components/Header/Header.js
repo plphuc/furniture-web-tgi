@@ -1,20 +1,29 @@
+import classNames from 'classnames';
 import styles from './Header.module.css';
 
 function Header(props) {
   return (
-    <div className={styles.wrapper}>
+    <div className={classNames(styles.wrapper, 'container')}>
       <div>
-        <span>Furniture</span>
+        <span className={styles.shopNameContainer}>Furniture</span>
       </div>
-      <div className={styles.navigateWrapper}>
-        <nav className={styles.navigateContainer}>
-          <div className={styles.navigateItem}><a href="/">Home</a></div>
-          <div className={styles.navigateItem}><a href="/services">Services</a></div>
-          <div className={styles.navigateItem}><a href="/doctors">Doctors</a></div>
-          <div className={styles.navigateItem}><a href="/products">Products</a></div>
-          <div className={styles.navigateItem}><a href="/gallery">Gallery</a></div>
-        </nav>
-      </div>
+      <nav className={classNames(styles.navigateWrapper, 'flexWrapper')}>
+        <div className={styles.navigateItem}>
+          <a href="/">Home</a>
+        </div>
+        <div className={styles.navigateItem}>
+          <a href="/services">Services</a>
+        </div>
+        <div className={styles.navigateItem}>
+          <a href="/doctors">Doctors</a>
+        </div>
+        <div className={styles.navigateItem}>
+          <a href="/products">Products</a>
+        </div>
+        <div className={styles.navigateItem}>
+          <a href="/gallery">Gallery</a>
+        </div>
+      </nav>
     </div>
   );
 }

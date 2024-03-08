@@ -1,11 +1,16 @@
-.contentWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .contentContainer {
   margin: 3.5rem 0 3.5rem;
+}
+
+.titleContent {
+  font-size: 3.2rem;
+}
+
+.descContent {
+  font-size: 2rem;
+}
+
+.imagesContainer {
   display: flex;
   justify-content: center;
   align-items: center;

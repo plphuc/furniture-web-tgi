@@ -1,13 +1,20 @@
 .wrapper {
   height: var(--header-height);
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navigateContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.shopNameContainer {
+  color: var(--brand-identity-color);
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+
+.navigateWrapper {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--nav-text-color);
+  gap: 5rem;
 }

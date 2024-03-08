@@ -2,17 +2,37 @@
   --header-height: 122px;
   --cover-height: 749px;
 
-  --dark-blue-color: #03344F;
-  --light-blue-color: #F2F5FF;
+  --brand-identity-color: #054C73;
+  --nav-text-color: #333333;
+  --dark-blue-color: #03344f;
+  --light-blue-color: #f2f5ff;
   --background-color: #fcfcfc;
+}
+
+.flexWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColumnWrapper {
+  flex-direction: column;
 }
 
 .blueWrapper {
   background-color: var(--light-blue-color);
 }
 
+.darkBlueWrapper {
+  background-color: var(--dark-blue-color);
+}
+
 .greyWrapper {
   background-color: var(--background-color);
+}
+
+.container {
+  margin: 0 auto;
 }
 
 html {
@@ -23,6 +43,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  color: inherit;
 }
 
 a {

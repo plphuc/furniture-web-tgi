@@ -5,6 +5,10 @@ import inspiration3 from './inspirationItem3.png';
 
 import beautyItem from './beautyItem.png';
 
+import browseTheRangeItem1 from './browseTheRangeItem1.png';
+import browseTheRangeItem2 from './browseTheRangeItem2.png';
+import browseTheRangeItem3 from './browseTheRangeItem3.png';
+
 import purchaseSecurely from './purchaseSecurely.png';
 import shipFromWarehouse from './shipFromWareHouse1.png';
 import styleYourRoom from './styleYourRoom1.png';
@@ -18,6 +22,7 @@ export {
   cover,
   inspiration1, inspiration2, inspiration3,
   beautyItem,
+  browseTheRangeItem1, browseTheRangeItem2, browseTheRangeItem3,
   purchaseSecurely, shipFromWarehouse, styleYourRoom,
   ig1, ig2, ig3, ig4
 };
