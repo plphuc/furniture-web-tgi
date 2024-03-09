@@ -3,7 +3,8 @@
   --cover-height: 749px;
 
   --brand-identity-color: #054C73;
-  --nav-text-color: #333333;
+  --text-primary-color: #333333;
+  --text-secondary-color: #67676a;
   --dark-blue-color: #03344f;
   --light-blue-color: #f2f5ff;
   --background-color: #fcfcfc;
@@ -31,8 +32,16 @@
   background-color: var(--background-color);
 }
 
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #D7D6D6;
+}
+
 .container {
-  margin: 0 auto;
+  width: 100%;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 html {
@@ -40,6 +49,7 @@ html {
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
