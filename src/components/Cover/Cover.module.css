@@ -19,15 +19,22 @@
   align-items: flex-start;
   gap: 3rem;
   transform: translateY(-50%);
+  box-shadow: 3px 5px 7px #66626261;
 
   & .categoryContainer {
     font-weight: 600;
     font-size: 1.6rem;
-    text-shadow: 3px 2px rgb(17 16 16 / 20%);
+    text-shadow: 0 3px 2px rgb(17 16 16 / 20%);
   }
 
   & .descriptionContainer {
     font-size: 1.8rem;
+  }
+
+  & .buyNowButtonContainer {
+    box-shadow: 0 3px 5px #5c5e6099;
+    border-radius: 50px;
+    margin-bottom: 10px;
   }
 }
 

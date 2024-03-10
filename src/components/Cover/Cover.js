@@ -2,6 +2,7 @@ import React from 'react';
 import { cover } from 'assets/images';
 import styles from './Cover.module.css';
 import classNames from 'classnames';
+import PrimaryButton from 'commonComponents/PrimaryButton/PrimaryButton';
 
 function Cover(props) {
   return (
@@ -23,9 +24,7 @@ function Cover(props) {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis.
         </span>
-        <button>
-          <a href="/shopping">Buy now</a>
-        </button>
+        <div className={styles.buyNowButtonContainer}><PrimaryButton text="BUY NOW" /></div>
       </div>
     </div>
   );
