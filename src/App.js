@@ -20,9 +20,9 @@ import {
   styleYourRoom,
 } from 'assets/images';
 
-import './index.css';
-import './App.css';
-import './responsive.css';
+import './index.scss';
+import './App.scss';
+import './responsive.scss';
 import PrimaryButton from 'commonComponents/PrimaryButton/PrimaryButton';
 
 function App() {

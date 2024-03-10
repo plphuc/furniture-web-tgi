@@ -1,6 +1,6 @@
 import React from 'react';
 import { cover } from 'assets/images';
-import styles from './Cover.module.css';
+import styles from './Cover.module.scss';
 import classNames from 'classnames';
 import PrimaryButton from 'commonComponents/PrimaryButton/PrimaryButton';
 

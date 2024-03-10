@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './PrimaryButton.module.css'
+import styles from './PrimaryButton.module.scss'
 
 function PrimaryButton(props) {
-  const {text} = props;
+  const {text, link} = props;
   return (
     <button className={styles.wrapper}>
-      <div><a>{text}</a></div>
+      <div><a href={link}>{text}</a></div>
     </button>
   );
 }

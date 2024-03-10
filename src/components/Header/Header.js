@@ -1,7 +1,7 @@
 import classNames from 'classnames';
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 import { menuIcon } from 'assets/images';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import PrimaryMenu from 'commonComponents/PrimaryMenu/PrimaryMenu';
 
 const menuItem = [
@@ -10,7 +10,7 @@ const menuItem = [
   { title: 'Doctors', link: 'doctors' },
   { title: 'Products', link: 'products' },
   { title: 'Gallery', link: 'gallery' },
-]
+];
 
 function Header(props) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,13 +22,13 @@ function Header(props) {
     const handleClickOutside = (e) => {
       setMenuOpen(false);
       document.removeEventListener('click', handleClickOutside);
-    }
+    };
 
     if (!menuOpen) {
       document.addEventListener('click', handleClickOutside);
     }
   };
-  
+
   return (
     <div className={classNames(styles.wrapper, 'container')}>
       <div>
@@ -56,7 +56,9 @@ function Header(props) {
       </nav>
 
       <div className={styles.menuModalWrapper}>
-        <div className={styles.menuIconContainer} onClick={handleClickMenu}><img src={menuIcon} /></div>
+        <div className={styles.menuIconContainer} onClick={handleClickMenu}>
+          <img src={menuIcon} alt='menu icon'/>
+        </div>
         {menuOpen && <PrimaryMenu listContent={menuItem} />}
       </div>
     </div>

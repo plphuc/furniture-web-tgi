@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './PrimaryMenu.module.css';
+import styles from './PrimaryMenu.module.scss';
 
 function PrimaryMenu(props) {
   const { listContent } = props;
