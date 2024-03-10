@@ -19,8 +19,11 @@ import {
   shipFromWarehouse,
   styleYourRoom,
 } from 'assets/images';
-import './App.css';
+
 import './index.css';
+import './App.css';
+import './responsive.css';
+import PrimaryButton from 'commonComponents/PrimaryButton/PrimaryButton';
 
 function App() {
   return (
@@ -28,7 +31,7 @@ function App() {
       <Header />
       <Cover />
       <div className="utilityWrapper blueWrapper flexWrapper">
-        <div className="utilityContainer flexWrapper container">
+        <div className="container utilityContainer flexWrapper">
           <div className="utilityItem flexWrapper">
             <div className="logoItem">
               <Delivery />
@@ -86,20 +89,14 @@ function App() {
               Beautify Your Space
             </span>
             <span className="descriptionContent beautySpaceDescription">
-              Do eiusmod tempor incididunt ut labore et
+              Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
             </span>
-            <span className="descriptionContent beautySpaceDescription">
-              dolore magna aliqua. Ut enim ad minim veniam,
-            </span>
-            <span className="descriptionContent beautySpaceDescription">
-              quis nostrud exercitation ullamco laboris.
-            </span>
-            <button>
-              <a href="/">Learn more</a>
-            </button>
+            <div className="learnMoreButtonContainer">
+              <PrimaryButton text="LEARN MORE" />
+            </div>
           </div>
-          <div className="imagesContainer">
-            <div className="circleWrapper"></div>
+          <div className="imagesContainer beautySpaceImageWrapper">
             <div className="beautySpaceImageContainer">
               <img src={beautyItem} alt="Beauty Item" />
             </div>
@@ -107,76 +104,83 @@ function App() {
         </div>
       </div>
       <div className="contentWrapper flexWrapper flexColumnWrapper greyWrapper">
-        <div className="contentWrapper flexWrapper flexColumnWrapper">
-          <span className="titleContent">Browse The Range</span>
-          <span className="descriptionContent">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </span>
-        </div>
-        <div className="imagesContainer flexWrapper">
-          <div className="imageItem flexWrapper flexColumnWrapper">
-            <img src={browseTheRangeItem1} alt="Browse The Range Item 1" />
-            <span className="browseTheRangeTitle">Dining</span>
+        <div className="container">
+          <div className="flexWrapper flexColumnWrapper">
+            <span className="titleContent">Browse The Range</span>
+            <span className="descriptionContent">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
           </div>
-          <div className="imageItem flexWrapper flexColumnWrapper">
-            <img src={browseTheRangeItem2} alt="Browse The Range Item 2" />
-            <span className="browseTheRangeTitle">Living</span>
-          </div>
-          <div className="imageItem flexWrapper flexColumnWrapper">
-            <img src={browseTheRangeItem3} alt="Browse The Range Item 3" />
-            <span className="browseTheRangeTitle">Bedroom</span>
+          <div className="imagesContainer flexWrapper">
+            <div className="imageItem flexWrapper flexColumnWrapper">
+              <img src={browseTheRangeItem1} alt="Browse The Range Item 1" />
+              <span className="browseTheRangeTitle">Dining</span>
+            </div>
+            <div className="imageItem flexWrapper flexColumnWrapper">
+              <img src={browseTheRangeItem2} alt="Browse The Range Item 2" />
+              <span className="browseTheRangeTitle">Living</span>
+            </div>
+            <div className="imageItem flexWrapper flexColumnWrapper">
+              <img src={browseTheRangeItem3} alt="Browse The Range Item 3" />
+              <span className="browseTheRangeTitle">Bedroom</span>
+            </div>
           </div>
         </div>
       </div>
       <div className="separator"></div>
       <div className="contentWrapper flexWrapper greyWrapper flexColumnWrapper">
-        <div className="flexWrapper flexColumnWrapper">
-          <span className="titleContent">How It Works</span>
-          <span className="descriptionContent">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </span>
-        </div>
-        <div className="imagesContainer flexWrapper container">
-          <div className="imageItem flexWrapper flexColumnWrapper">
-            <div className="howItWorksImageContainer">
-              <img src={purchaseSecurely} alt="Purchase Securely Item 1" />
-              <div className="howItWorksIndexContainer">
-                <span>1.</span>
-              </div>
-            </div>
-            <div className="howItWorksContent flexWrapper flexColumnWrapper">
-              <span className="howItWorksTitle">Purchase Securely</span>
-              <span className="howItWorksDescription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </span>
-            </div>
+        <div className="container">
+          <div className="flexWrapper flexColumnWrapper">
+            <span className="titleContent">How It Works</span>
+            <span className="descriptionContent">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
           </div>
-          <div className="imageItem flexWrapper flexColumnWrapper">
-            <div className="howItWorksImageContainer">
-              <img src={shipFromWarehouse} alt="Ships From Warehouse Item 2" />
-              <div className="howItWorksIndexContainer">
-                <span>2.</span>
+          <div className="imagesContainer flexWrapper container howItWorksWrapper">
+            <div className="imageItem flexWrapper flexColumnWrapper">
+              <div className="howItWorksImageContainer">
+                <img src={purchaseSecurely} alt="Purchase Securely Item 1" />
+                <div className="howItWorksIndexContainer">
+                  <span>1.</span>
+                </div>
+              </div>
+              <div className="howItWorksContent flexWrapper flexColumnWrapper">
+                <span className="howItWorksTitle">Purchase Securely</span>
+                <span className="howItWorksDescription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </span>
               </div>
             </div>
-            <div className="howItWorksContent flexWrapper flexColumnWrapper">
-              <span className="howItWorksTitle">Ships From Warehouse</span>
-              <span className="howItWorksDescription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </span>
-            </div>
-          </div>
-          <div className="imageItem flexWrapper flexColumnWrapper">
-            <div className="howItWorksImageContainer">
-              <img src={styleYourRoom} alt="Style Your Room Item 3" />
-              <div className="howItWorksIndexContainer">
-                <span>3.</span>
+            <div className="imageItem flexWrapper flexColumnWrapper">
+              <div className="howItWorksImageContainer">
+                <img
+                  src={shipFromWarehouse}
+                  alt="Ships From Warehouse Item 2"
+                />
+                <div className="howItWorksIndexContainer">
+                  <span>2.</span>
+                </div>
+              </div>
+              <div className="howItWorksContent flexWrapper flexColumnWrapper">
+                <span className="howItWorksTitle">Ships From Warehouse</span>
+                <span className="howItWorksDescription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </span>
               </div>
             </div>
-            <div className="howItWorksContent flexWrapper flexColumnWrapper">
-              <span className="howItWorksTitle">Style Your Room</span>
-              <span className="howItWorksDescription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </span>
+            <div className="imageItem flexWrapper flexColumnWrapper">
+              <div className="howItWorksImageContainer">
+                <img src={styleYourRoom} alt="Style Your Room Item 3" />
+                <div className="howItWorksIndexContainer">
+                  <span>3.</span>
+                </div>
+              </div>
+              <div className="howItWorksContent flexWrapper flexColumnWrapper">
+                <span className="howItWorksTitle">Style Your Room</span>
+                <span className="howItWorksDescription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -185,50 +189,53 @@ function App() {
         <div className="flexWrapper flexColumnWrapper">
           <span className="titleContent">Join Our Mailing List</span>
           <span className="descriptionContent">
-            Sign up to receive inspiration, product updates, <br/> and special offers
-            from our team.
+            Sign up to receive inspiration, product updates, <br /> and special
+            offers from our team.
           </span>
         </div>
         <div className="formWrapper">
           <form>
             <div className="inputWrapper">
               <input type="text" id="email" placeholder="example@gmail.com" />
-              <button>Submit</button>
+              <button className="submitButton">Submit</button>
             </div>
           </form>
         </div>
       </div>
-      <footer className="footerWrapper darkBlueWrapper flexWrapper container">
-        <div className="contentWrapper">
-          <div className="footerTitle">
-            <span>Beauty Care</span>
-          </div>
-          <div className="descriptionContent footerDescription">
-            <span>
-              Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </span>
-          </div>
-          <div className="footerTitle">
-            <span>Follow Us</span>
-          </div>
-        </div>
-        <div className="instaShopWrapper flexWrapper flexColumnWrapper">
-          <div className="footerTitle">
-            <span>Instagram Shop</span>
-          </div>
-          <div className="instaShopImageContainer flexWrapper">
-            <div className="instaShopImageItem">
-              <img src={ig1} alt="Insta Shop 1" />
+      <footer className="footerWrapper darkBlueWrapper">
+        <div className="container flexWrapper">
+          <div className="contentWrapper footerContentWrapper">
+            <div className="footerTitle">
+              <span>Beauty Care</span>
             </div>
-            <div className="instaShopImageItem">
-              <img src={ig2} alt="Insta Shop 2" />
+            <div className="descriptionContent footerDescription">
+              <span>
+                Do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris.
+              </span>
             </div>
-            <div className="instaShopImageItem">
-              <img src={ig3} alt="Insta Shop 3" />
+            <div className="footerTitle">
+              <span>Follow Us</span>
             </div>
-            <div className="instaShopImageItem">
-              <img src={ig4} alt="Insta Shop 4" />
+          </div>
+          <div className="instaShopWrapper flexWrapper flexColumnWrapper">
+            <div className="footerTitle">
+              <span>Instagram Shop</span>
+            </div>
+            <div className="instaShopImageContainer flexWrapper">
+              <div className="instaShopImageItem">
+                <img src={ig1} alt="Insta Shop 1" />
+              </div>
+              <div className="instaShopImageItem">
+                <img src={ig2} alt="Insta Shop 2" />
+              </div>
+              <div className="instaShopImageItem">
+                <img src={ig3} alt="Insta Shop 3" />
+              </div>
+              <div className="instaShopImageItem">
+                <img src={ig4} alt="Insta Shop 4" />
+              </div>
             </div>
           </div>
         </div>

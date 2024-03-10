@@ -18,11 +18,13 @@ import ig2 from './ig2.jpg';
 import ig3 from './ig3.jpg';
 import ig4 from './ig4.jpg';
 
+import menuIcon from './menuIcon.png'
 export {
   cover,
   inspiration1, inspiration2, inspiration3,
   beautyItem,
   browseTheRangeItem1, browseTheRangeItem2, browseTheRangeItem3,
   purchaseSecurely, shipFromWarehouse, styleYourRoom,
-  ig1, ig2, ig3, ig4
+  ig1, ig2, ig3, ig4,
+  menuIcon
 };
