@@ -1,0 +1,13 @@
+.wrapper {
+  cursor: pointer;
+  border: none;
+  background-color: var(--brand-identity-color);
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  padding: 20px 40px;
+  & div {
+    padding: 0 15px;
+  }
+}
