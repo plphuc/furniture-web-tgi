@@ -18,3 +18,26 @@
   color: var(--nav-text-color);
   gap: 5rem;
 }
+
+.menuIconContainer img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.menuModalWrapper {
+  position: relative;
+}
+
+.menuModalWrapper {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .navigateWrapper {
+    display: none;
+  }
+
+  .menuModalWrapper {
+    display: block;
+  }
+}
